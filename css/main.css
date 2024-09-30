@@ -40,10 +40,8 @@ header{
 }
 
 header img{
-    max-width: 100%;
+    width: fit-content;
     height: 90%;
-    object-fit: cover;
-    -webkit-object-fit: cover;
     display: flex;
     padding-left: 3vw;
 }
@@ -402,4 +400,13 @@ footer{
     .foot_right ul li a {
         word-wrap: break-word;
     }
+}
+
+@media not all and (min-resolution:.001dpcm) { 
+  @supports (-webkit-appearance:none) {
+    .about-photo {
+        width: 100%;
+        height: 90%; 
+    }
+  }
 }
