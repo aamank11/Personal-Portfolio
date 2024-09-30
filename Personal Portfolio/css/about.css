@@ -1,0 +1,110 @@
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding: 20px;
+    color:  rgb(255, 253, 249);
+}
+
+.about-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-photo {
+    width: 350vh;
+    height: 350vh;
+    height: auto;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.5s ease-out;
+    border-bottom: 50px rgb(14, 161, 240);
+    padding-left: 20px;
+    padding-bottom: -50px;
+}
+
+.about-text p:nth-child(1) {
+    width: 95%;
+    font-size: 4vw;
+    float: right;
+    margin-top: 40px;
+    text-decoration: underline rgb(14, 161, 240);
+    font-family: 'Merriweather', serif;
+}
+
+.about-text p:nth-child(2) {
+    width: 95%;
+    font-size: 1.1vw;
+    float: right;
+    margin-top: 20px;
+    font-family: 'Merriweather', serif;
+}
+
+.about-text p:nth-child(3){
+    width: 95%;
+    font-size: 1.7vw;
+    float: right;
+    margin-top: 20px;
+    font-family: 'Merriweather', serif;
+    text-decoration: underline rgb(14, 161, 240);
+}
+
+.about-text p:nth-child(3) img{
+    height: 1.5vw;
+    width: 1.5vw;
+}
+
+.slide-up {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 800px) {
+    body{
+        background-repeat: repeat;
+        max-height: fit-content;
+    }
+    .about-container {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center; 
+    }
+
+    .about-photo {
+        height: 100%;
+        width: 250px;
+        padding: 0;
+        padding-bottom: 20px; 
+    }
+
+    .about-text p:nth-child(1) {
+        font-size: 4vw;
+        width: 100%; 
+        text-align: center;
+    }
+
+    .about-text p:nth-child(2){
+        font-size: 2vw;
+        width: 100%; 
+        text-align: center; 
+    }
+
+    .about-text p:nth-child(3){
+        font-size: 3vw;
+        padding-bottom: 20px; 
+    }
+    
+    .about-text p:nth-child(3) img{
+        height: 3vw;
+        width: 3vw;
+    }
+
+    .about-container{
+        height: max-content;
+    }
+}
