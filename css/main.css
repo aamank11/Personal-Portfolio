@@ -1,0 +1,403 @@
+body{
+    background-image: url(../Assets/aashishbg.jpeg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 50px;
+    height: fit-content;
+    background-color: black;
+}
+
+body:after{
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(../Assets/ghcolor.png) url(../Assets/igcolor.png) url(../Assets/telephoncolor.png) url(../Assets/mailcolor.png) url(../Assets/licolor.png) url(../Assets/lccolor.png);
+}
+
+html{
+    height: 100%;
+}
+
+a{
+    cursor: pointer;
+}
+
+
+/* header*/
+header{
+    width: 100%;
+    top: 0;
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 1000000;
+    justify-content: space-between;
+}
+
+header img{
+    width: fit-content;
+    height: 90%;
+    display: flex;
+    padding-left: 3vw;
+}
+
+.main_header_nav ul{
+    padding-left: 10px;
+}
+
+.main_header_nav ul li{
+    font-size: 1.25vw;
+    float: left;
+    margin-right: 4vw;
+    color: rgb(255, 253, 249);
+}
+
+.main_header_nav ul li a{
+    font-family: "Merriweather", serif;
+    line-height: 4vw;
+    display: block;
+    height: 100%;
+}
+
+.main_header_nav ul li a:hover{
+    color: rgb(14, 161, 240);
+}
+
+
+.main_header_social_media{
+    width: fit-content;
+    display: flex;
+    margin-left: 5vw;
+    align-items: center;
+    column-gap: 1.5vw;
+    padding-right: 3vw;
+}
+
+.main_header_social_media_ig{
+    width: 38px;
+    height: 38px;
+    background-image: url(../Assets/igwhite.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main_header_social_media_ig:hover{
+    background-image: url(../Assets/igcolor.png);
+}
+
+.main_header_social_media_li{
+    width: 38px;
+    height: 38px;
+    background-image: url(../Assets/liwhite.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main_header_social_media_li:hover{
+    background-image: url(../Assets/licolor.png);
+}
+
+.main_header_social_media_gh{
+    width: 38px;
+    height: 38px;
+    background-image: url(../Assets/ghwhite.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main_header_social_media_gh:hover{
+    background-image: url(../Assets/ghcolor.png);
+}
+
+.main_header_social_media_lc{
+    width: 38px;
+    height: 38px;
+    background-image: url(../Assets/lcwhite.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main_header_social_media_lc:hover{
+    background-image: url(../Assets/lccolor.png);
+}
+
+.main_header_social_media_mail{
+    width: 38px;
+    height: 38px;
+    background-image: url(../Assets/mailwhite.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main_header_social_media_mail:hover{
+    background-image: url(../Assets/mailcolor.png);
+}
+
+/* Hamburger Icon */
+.hamburger-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    padding-right: 3vw;
+}
+
+.hamburger-icon span {
+    width: 30px;
+    height: 3px;
+    background-color:  rgb(255, 253, 249);
+    display: flex;
+}
+
+/* Dropdown Menu*/
+.dropdown-menu {
+    display: none;
+    flex-direction: column;
+    background-color: black;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+.hamburger_social_media{
+    display: flex;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 35px;
+    justify-content: right;
+}
+
+.hamburger_social_media a{
+    padding: 0 30px;
+}
+
+.hamburger_social_media a{
+    width: 10px;
+    height: 10px;
+}
+
+.dropdown-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dropdown-menu ul li {
+    text-align: right;
+    padding: 10px;
+}
+
+.dropdown-menu ul li a {
+    font-family: "Merriweather", serif;
+    color: rgb(255, 253, 249);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.dropdown-menu ul li a:hover {
+    color: rgb(14, 161, 240);
+}
+
+/* Hamburger icon into an X */
+.hamburger-icon.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-icon.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7.2px, -5.7px);
+}
+  
+.hamburger-icon span {
+    transition: all .3s ease;
+  }
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+
+    .main_header_nav {
+        display: none;
+    }
+
+    .main_header_social_media {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: flex;
+    }
+
+    .dropdown-menu {
+        display: none;
+    }
+
+    .dropdown-menu.show {
+        display: flex;
+    }
+}
+
+/* Footer*/
+footer{
+    background-color: black;
+    height: max-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.foot_left{
+    width: 30%;
+    padding-top: 2.6vw;
+    height: 32vh;
+    padding-left: 3vw;
+}
+
+.foot_mid{
+    width: 30%;
+    height: 32vh;
+    padding-top: 2.6vw;
+}
+
+.foot_right{
+    padding-top: 2.6vw;
+    width: 30%;
+    height: 32vh;
+    text-align: right;
+    line-height: 5vh;
+    padding-right: 3vw;
+}
+
+.foot_right p{
+    line-height: 3.5vh;
+}
+
+.mid_top{
+    padding-top: 0.3vh;
+    width: 100%;
+    height: 22vh;
+    background-image: url(../Assets/other_phcircle.png);
+    background-size: 20vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mid_bottom{
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 2vw;
+    line-height: 2vw;
+    color: rgb(255, 253, 249);
+}
+
+.foot_left ul{
+    border-left: 0.3vw solid rgb(14, 161, 240);
+    padding-left: 10px;
+    line-height: 5vh;
+    width: 80%;
+    font-family: "Merriweather", serif;
+    font-size: 1.3vw;
+    color: rgb(255, 253, 249);
+}
+
+.foot_left ul a:hover{
+    color: rgb(14, 161, 240);
+}
+
+.foot_right ul{
+    padding-top: 0.3vh;
+    line-height: 5vh;
+    font-family: "Merriweather", serif;
+    font-size: 1.3vw;
+    color: rgb(255, 253, 249);
+}
+
+.foot_left img{
+    padding-top: 10px;
+    height: 3vw;
+}
+
+.foot_right p{
+    padding-top: 6vw;
+    font-size: 0.8vw;
+    color: rgb(255, 253, 249);
+    font-family: "Merriweather", serif;
+}
+
+.foot_right ul li:nth-child(2):hover{
+    color: rgb(14, 161, 240);
+}
+
+.foot_right ul li:nth-child(3):hover{
+    color: rgb(14, 161, 240);
+}
+
+/* Tablet and phone responsiveness */
+@media (max-width: 800px) {
+    footer{
+        height: 300px;
+    }
+    
+    .foot_left, .foot_mid, .foot_right {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .foot_left img {
+        height: 40px;
+        margin-top: 15px;
+    }
+
+    .mid_bottom {
+        font-size: 1vw;
+        line-height: 2vw;
+    }
+
+    .foot_right p {
+        font-size: 1vw;
+    }
+}
+
+/* Mobile-specific adjustments for phones */
+@media (max-width: 600px) {
+    .foot_left ul, .foot_right ul {
+        font-size: 2.2vw;
+    }
+
+    .foot_left img {
+        height: 30px;
+    }
+
+    .mid_top {
+        height: 33vw;
+        background-size: cover;
+    }
+
+    .mid_bottom {
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+
+    .foot_right p {
+        font-size: 1vw;
+    }
+
+    .foot_left ul li, .foot_right ul li {
+        line-height: 6vw;
+    }
+
+    .foot_right ul li a {
+        word-wrap: break-word;
+    }
+}

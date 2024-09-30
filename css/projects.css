@@ -1,0 +1,129 @@
+.projects-container {
+    display: flex;
+    height: fit-content;
+    padding: 20px;
+    color:  rgb(255, 253, 249);
+    flex-direction: column;
+}
+
+.projects-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.projects-title{
+    width: 95%;
+    font-size: 4vw;
+    color:  rgb(255, 253, 249);
+    float: left;
+    margin-top: 40px;
+    text-decoration: underline rgb(14, 161, 240);
+    font-family: 'Merriweather', serif;
+    padding-left: 3vw;
+}
+
+.project-des{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.excel-title{
+    padding-top: 20px;
+    font-family: 'Merriweather', serif;
+    color: rgb(14, 161, 240);
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
+}
+
+.excel{
+    padding-top: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.excel img{
+    height: 15vw;
+    padding-left: 3vw;
+}
+
+.excel p{
+    width: 40%;
+    font-size: 1.6vw;
+    padding-right: 3vw;
+    text-align: right;
+}
+
+.music_prediction{
+    padding-top: 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.music_prediction img{
+    height: 20vw;
+    padding-right: 3vw;
+}
+
+.music_prediction p{
+    width: 40%;
+    font-size: 1.6vw;
+    padding-left: 3vw;
+}
+
+.music-title{
+    padding-top: 50px;
+    font-family: 'Merriweather', serif;
+    color: rgb(14, 161, 240);
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
+}
+
+@media (max-width: 800px){
+    .projects-title{
+        font-size: 5vw;
+    }
+    .excel{
+        display: flex;
+        justify-content: space-between;
+        padding: none;
+    }
+    .excel-title{
+        font-size: 5vw;
+    }
+    
+    .excel img{
+        height: 20vw;
+    }
+    
+    .excel p{
+        font-size: 2.4vw;
+    }
+
+    .music-title{
+        font-size: 5vw;
+    }
+
+    .music_prediction{
+        padding-bottom: 250px;
+    }
+    
+    .music_prediction img{
+        height: 20vw;
+    }
+    
+    .music_prediction p{
+        font-size: 2.4vw;
+    }
+}
