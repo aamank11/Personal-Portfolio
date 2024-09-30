@@ -42,7 +42,8 @@ header{
 header img{
     max-width: 100%;
     height: 90%;
-    -webkit-flex-shrink: 0;
+    object-fit: cover;
+    -webkit-object-fit: cover;
     display: flex;
     padding-left: 3vw;
 }
